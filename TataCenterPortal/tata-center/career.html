@@ -1,0 +1,117 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <!-- Compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="css/materialize.min.css"> -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!--  <script src="js/materialize.min.js"></script> -->
+</head>
+
+<body class="homepage">
+    <header>
+        <div class="upperheader container">
+            <span class="telno">+91 22 2576 5901</span>
+            <span class="email">office.tctd@iitb.ac.in</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header clearfix">
+            <div class="container">
+                <div class="logo">
+                    <a href=""><img src="images/logo.png" alt="logo" /></a>
+                </div>
+                <div class="search">
+                  <img src="images/search-icon.png" alt="search" />
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="projects.html">Project</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">People</a></li>
+                        <li><a href="">Facilities</a></li>
+                        <li><a href="">Other activities</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="" class="active">Career</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+    <div class="careerpage">
+        <div class="smallcontainer">
+            <div class="graybox">
+            <div class="cartext">
+                <p><strong>Position & Salary:</strong> Software Developer (1 Post)</p>
+                <p><strong>Position & Salary:</strong> Software Developer (1 Post)</p>
+</div>
+      <div class="cartext">
+                <p><strong> Last Date to Apply:</strong> 14th July, 2017 </p>
+                <p><strong>Qualification:</strong> B. Sc./M. Sc. (IT/CS)/BE/B. Tech.</p>
+                </div>
+
+<h3><strong>Responsibilities:</strong></h3>        
+<ul>
+<li>Write well designed, testable, efficient code by using best software development practices</li>
+<li>Create website layout/user interface by using standard HTML/CSS practices</li>
+<li>Integrate data from various back-end services and databases</li>
+<li> Gather and refine specifications and requirements based on technical needs</li>
+<li>Create and maintain software documentation</li>
+<li>Be responsible for maintaining, expanding, and scaling our site</li>
+<li>Stay plugged into emerging technologies/industry trends and apply them into operations and activities</li>
+<li>Cooperate with web designers to match visual design intent</li>
+</ul>
+<h3><strong>Requirements:</strong></h3>        
+<ul>
+<li>Proven working experience in web programming</li>
+<li>In-depth knowledge of modern HTML5/CSS3</li>
+<li>Familiarity with at least one of the following programming languages: PHP and Java</li>
+<li>A solid understanding of how web applications work including security, session management, and best development practices</li>
+<li>Adequate knowledge of relational database systems, Object Oriented Programming and web application development</li>
+<li>Basic knowledge of Search Engine Optimisation process</li>
+<li>Strong organisational skills to juggle multiple tasks within the constraints of timelines </li>
+<li>Learn rapidly and master diverse web technologies and techniques.</li>
+</ul>
+<p>Send your Resume at media.tctd@gmail.com </p>
+</div>
+     </div>   
+     </div>
+    <footer class="footerid clearfix">
+ <p>Copyright © 2017 - Tata Centre for Technology and Design, IIT Bombay</p>
+    </footer>
+            <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".collapse").on("hide.bs.collapse", function(event) {
+            var target = "#" + event.target.id;
+            $(target).siblings(".panel-heading").removeClass("open-item");
+            console.log(event.target.id)
+        });
+
+        $(".collapse").on("show.bs.collapse", function(event) {
+            var target = "#" + event.target.id;
+            $(target).siblings(".panel-heading").addClass("open-item");
+            console.log(event.target.id)
+        });
+
+        $(".custom-select").each(function() {
+            $(this).wrap("<span class='select-wrapper'></span>");
+            $(this).after("<span class='holder'></span>");
+        });
+        $(".custom-select").change(function() {
+            var selectedOption = $(this).find(":selected").text();
+            $(this).next(".holder").text(selectedOption);
+        }).trigger('change');
+    })
+    </script>
+</body>
+
+</html>

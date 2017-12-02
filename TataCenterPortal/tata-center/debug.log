@@ -1,0 +1,10 @@
+[1109/232928.948:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
+[1109/232928.965:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[1112/210009.589:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
+[1112/210009.610:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[1114/225811.588:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
+[1114/225811.591:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[1127/145728.783:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
+[1127/145728.789:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[1130/234620.171:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
+[1130/234620.193:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)

@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <!-- Compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="css/materialize.min.css"> -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!--  <script src="js/materialize.min.js"></script> -->
+</head>
+
+<body class="homepage">
+    <header>
+        <div class="upperheader container">
+            <span class="telno">+91 22 2576 5901</span>
+            <span class="email">office.tctd@iitb.ac.in</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header clearfix">
+            <div class="container">
+                <div class="logo">
+                    <a href=""><img src="images/logo.png" alt="logo" /></a>
+                </div>
+                <div class="search">
+                  <img src="images/search-icon.png" alt="search" />
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="projects.html">Project</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">People</a></li>
+                        <li><a href="">Facilities</a></li>
+                        <li><a href="" class="active">Other activities</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Career</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+    <div class="smallcontainer activities">
+      <div class="row activity-content">
+          <div class="col-12">
+              <h5>Workshops at the Lab:</h5>
+              <p>Tata Centre conducts workshops at the Lab to give hands-on experience to prototype making to students, especially from within the campus. Students are introduced to the machines and equipment at the Lab through these workshops. The objective is to include introduction & training on the various lab facilities, and then conduct brainstorming, fabricating and testing of the prototypes that the students work upon. These workshops are a part of the Centre’s outreach initiative to encourage ideas, hand skills and manpower.</p>
+          </div>
+      </div>  
+      <div class="row activity-content">
+        <div class="col-12">
+          <h5>Kalpana:</h5>
+          <p>The much-celebrated national event Kalpana is conducted annually to encourage innovation among the student population. This event is staged in 3 rounds, inviting thousands of applications from across educational institutions in the country. Kalpana is an ideal platform for most innovators, showcasing two different competitions - Nirmiti – the prototype-making event and Drishtikon – the poster-making event. After 3 months of the initial brainstorming, the finale is a week-long fabrication event at the Product Realisation Lab that brings out the winning prototypes.</p>
+        </div>
+      </div>
+      <div class="row activity-content">
+        <div class="col-12">
+          <h5>Field Trips:</h5>
+          <p>To supplement the learnings from the course Technology, Design and End to End Innovation and for getting a real life experience to understand the problems faced by the bottom of the pyramid, students are taken to various locations as field visits to study the relevant challenges there. These visits present an opportunity to understand the development of solutions through community stewardship. Observing how social and economic progress can be brought about by the simple helping hand of technology and the community-based solutions alleviate a lot of problems in this section of the pyramid, then become a learning experience.</p>
+        </div> 
+      </div>
+      <div class="row act-img">
+        <div class="col-6">
+          <div class="activity-img-list">
+             <img class="img-responsive" src="images/activities-page/dummy.jpg" />
+             <div class="img-caption">Field Visit</div> 
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="activity-img-list">
+             <img class="img-responsive" src="images/activities-page/dummy.jpg" />
+             <div class="img-caption">Workshops</div> 
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="activity-img-list">
+             <img class="img-responsive" src="images/activities-page/dummy.jpg" />
+             <div class="img-caption">Competition</div> 
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="activity-img-list">
+             <img class="img-responsive" src="images/activities-page/dummy.jpg" />
+             <div class="img-caption">Courseware in innovation</div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  <footer class="footerid clearfix">
+    <p>Copyright © 2017 - Tata Centre for Technology and Design, IIT Bombay</p>
+  </footer>
+            <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".collapse").on("hide.bs.collapse", function(event){
+                var target = "#"+event.target.id;
+                $(target).siblings(".panel-heading").removeClass("open-item");
+                console.log(event.target.id)
+              });
+
+            $(".collapse").on("show.bs.collapse", function(event){
+                var target = "#"+event.target.id;
+                $(target).siblings(".panel-heading").addClass("open-item");
+                console.log(event.target.id)
+              });
+        })
+    </script>
+</body>
+
+</html>

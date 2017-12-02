@@ -1,0 +1,110 @@
+  <html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <!-- Compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="css/materialize.min.css"> -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!--  <script src="js/materialize.min.js"></script> -->
+</head>
+  
+  <body>
+          <header>
+        <div class="upperheader container">
+            <span class="telno">+91 22 2576 5901</span>
+            <span class="email">office.tctd@iitb.ac.in</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header clearfix">
+            <div class="container">
+                <div class="logo">
+                    <a href=""><img src="images/logo.png" alt="logo" /></a>
+                </div>
+                <div class="search">
+                  <img src="images/search-icon.png" alt="search" />
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href=""  class="active">About us</a></li>
+                        <li><a href="projects.html">Project</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">People</a></li>
+                        <li><a href="">Facilities</a></li>
+                        <li><a href="">Other activities</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Career</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+      <div class="smallcontainer about">
+                <div class="row act-img">
+          <div>
+          <p>Tata Centre for Technology and Design at IIT Bombay was established in 2014 with support from the Tata Trusts. The centre aims to develop solutions to challenges faced by resource-constrained communities within India and across the world using an end to end innovation approach. Through this process the centre aims to develop human resources who are trained in technology, design and entrepreneurship by way of project work, coursework and field practice. The centre nurtures next generation leaders in engineering and business fields who deal with pressing problems in society in the context of complex economic, social and environment factors.</p>
+      </div>
+          <h2><strong>Approach:</strong></h2>
+          <span>At Tata centre, we look at solving challenges in a holistic way. We take an end to end innovation approach, which has the following steps:
+  </span>
+      <ul>
+          <li> Understanding the problem</li>
+          <li>Reviewing of existing solutions</li>
+          <li> Designing novel solutions with an optimal combination of performance and cost</li>
+          <li>Taking the solutions to the society through various scale up mechanisms.</li>
+      </ul>
+  </div>
+      <div class="abtus-img">
+          <img src="images/about/fig1.png" alt="aboutus" />
+      </div>
+      <p>The Tata Centre acts as a virtual centre for teaching and research that draws faculty members and graduate students from various academic units across IIT Bombay. The centre focuses on challenges in the areas of Agriculture and Food, Education, Energy, Healthcare, Housing, Water and Waste Management. It undertakes research projects in these areas by leveraging the expertise of the research community at IIT Bombay Tata Centre for Technology and Design at IIT Bombay closely works with its sister institute at the Massachusetts Institute of Technology, Cambridge, USA and with other partner organisations and stakeholders across India.
+  </p>
+  <h2>
+  News :</h2>
+  <ul>
+      <li>Information guide for Tata Fellowship.</li>
+          <li> Joint statement from IIT Bombay and Tata group on the Tata Centre for Technology and Design at IIT Bombay.
+  </li>
+  </ul>
+  <p>To have a look at our Newsletters and Annual Reports, visit <a href="">Support and Downloads</a></p>
+      </div>
+         
+          
+      <footer class="footerid clearfix">
+   <p>Copyright © 2017 - Tata Centre for Technology and Design, IIT Bombay</p>
+      </footer>
+              <script type="text/javascript" src="js/scripts.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+          $(".collapse").on("hide.bs.collapse", function(event) {
+              var target = "#" + event.target.id;
+              $(target).siblings(".panel-heading").removeClass("open-item");
+              console.log(event.target.id)
+          });
+  
+          $(".collapse").on("show.bs.collapse", function(event) {
+              var target = "#" + event.target.id;
+              $(target).siblings(".panel-heading").addClass("open-item");
+              console.log(event.target.id)
+          });
+  
+          $(".custom-select").each(function() {
+              $(this).wrap("<span class='select-wrapper'></span>");
+              $(this).after("<span class='holder'></span>");
+          });
+          $(".custom-select").change(function() {
+              var selectedOption = $(this).find(":selected").text();
+              $(this).next(".holder").text(selectedOption);
+          }).trigger('change');
+      })
+      </script>
+  </body>
+  
+  </html>

@@ -1,0 +1,117 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <!-- Compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="css/materialize.min.css"> -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!--  <script src="js/materialize.min.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="upperheader container">
+            <span class="telno">+91 22 2576 5901</span>
+            <span class="email">office.tctd@iitb.ac.in</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header clearfix">
+            <div class="container">
+                <div class="logo">
+                    <a href=""><img src="images/logo.png" alt="logo" /></a>
+                </div>
+                <div class="search">
+                  <img src="images/search-icon.png" alt="search" />
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="projects.html">Project</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="" class="active">People</a></li>
+                        <li><a href="">Facilities</a></li>
+                        <li><a href="">Other activities</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Career</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+
+        <div class="smallcontainer">
+            <div class="graybox">
+                <h2>Prof. Alka Hingorani</h2>
+                <p>Executive Committee Member </p>
+                <p>Associate professor, Industrial Design Centre</p>
+                <div class="peopleimgbig">
+                    <img src="images/people/bigimg.png" alt="ladyimg" />
+                    <span class="nextimg">
+                    </span>
+                    <span class="previmg">
+                    </span>
+                </div>
+                <div class="peopleinfo">
+                    <h2>Academic Background:</h2>
+                    <p>-  Ph. D. - University of California, Berkeley, USA (2006)</p>
+                    <p>-  Ph. D. - University of California, Berkeley, USA (2006)</p>
+                    <p>-  Ph. D. - University of California, Berkeley, USA (2006)</p>
+                    <p>-  Ph. D. - University of California, Berkeley, USA (2006)</p>
+                </div>
+                <div class="peopleinfo">
+                    <h2>Academic Background:</h2>
+                    <p>-  Ph. D. - University of California, Berkeley, USA (2006)</p>
+                    <p>-  Ph. D. - University of California, Berkeley, USA (2006)</p>
+                    <p>-  Ph. D. - University of California, Berkeley, USA (2006)</p>
+                    <p>-  Ph. D. - University of California, Berkeley, USA (2006)</p>
+                </div>
+                <div class="peopleinfo">
+                    <h2>E-mail ID:</h2>
+                    <p>alka@iitb.ac.in</p>
+                </div>
+                <div class="peopleinfo">
+                    <h2>Phone:</h2>
+                    <p>+91 22 2576 7801</p>
+                </div>
+            </div>
+        </div>    
+        
+    <footer class="footerid clearfix">
+        <p>Copyright © 2017 - Tata Centre for Technology and Design, IIT Bombay</p>
+    </footer>
+            <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".collapse").on("hide.bs.collapse", function(event) {
+            var target = "#" + event.target.id;
+            $(target).siblings(".panel-heading").removeClass("open-item");
+            console.log(event.target.id)
+        });
+
+        $(".collapse").on("show.bs.collapse", function(event) {
+            var target = "#" + event.target.id;
+            $(target).siblings(".panel-heading").addClass("open-item");
+            console.log(event.target.id)
+        });
+
+        $(".custom-select").each(function() {
+            $(this).wrap("<span class='select-wrapper'></span>");
+            $(this).after("<span class='holder'></span>");
+        });
+        $(".custom-select").change(function() {
+            var selectedOption = $(this).find(":selected").text();
+            $(this).next(".holder").text(selectedOption);
+        }).trigger('change');
+    })
+    </script>
+</body>
+
+</html>

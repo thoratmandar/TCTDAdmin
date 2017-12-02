@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <!-- Compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="css/materialize.min.css"> -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!--  <script src="js/materialize.min.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="upperheader container">
+            <span class="telno">+91 22 2576 5901</span>
+            <span class="email">office.tctd@iitb.ac.in</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header clearfix">
+            <div class="container">
+                <div class="logo">
+                    <a href=""><img src="images/logo.png" alt="logo" /></a>
+                </div>
+                <div class="search">
+                  <img src="images/search-icon.png" alt="search" />
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="projects.html" class="active">Project</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">People</a></li>
+                        <li><a href="">Facilities</a></li>
+                        <li><a href="">Other activities</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Career</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+    <div class="titlecontainer">
+        EDUCATION
+    </div>
+    <div class="smallcontainer content-div">
+        <div class="padded-content">
+        <h2 class="page-title">Lets Learn English Through Stories</h2>
+        <div class="desc-div">
+        <p><strong>Faculty: </strong>Prof. Alka Hingorani, IDC School of Design</p>
+        <p><strong>Fellow: </strong>Karan Vohra (graduated 2016) and Salik Ansari</p>
+        <p><strong>Project Staff: </strong>Shruti Chauhan, Aarti Latkar, Sanket Pethkar and Safiya Shaikh</p>
+        </div>
+        <p>The project aims at facilitating English language learning in resource constrained environments, through engagement with stories written and illustrated by the children themselves. There are two primary motivations, one, to reinforce the role of children as content creators rather than mere consumers, and two, to enable learning outside of a structured English language classroom.</p>
+        <p>LETS uses digital applications that employ Same-Language-Subtitling, voice overs, and voice recording software to encourage active listening and reading aloud. The books and stories illustrated and brought to imaginative life by the children supplement the animated stories they see a. hear a. respond to on tablets. The project is intensely collaborative, melding art and language and literature in ways that turn accepted relationships-teacher/learner, creator/consumer-on their heads.</p>
+    </div>
+    <div class="accordian-container">
+        <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading open-item">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+          <a >UPDATES </a><span class="glyphicon glyphicon-menu-right"></span>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">Context and Students as Co-Creators</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+          <a>NEWSLETTER </a><span class="glyphicon glyphicon-menu-right"></span>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          <a>PATENTS </a><span class="glyphicon glyphicon-menu-right"></span>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+          <a>COPYRIGHTS & TRADEMARKS </a><span class="glyphicon glyphicon-menu-right"></span>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+          <a>PUBLICATIONS  </a><span class="glyphicon glyphicon-menu-right"></span>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+      </div>
+    </div>
+  </div> 
+    </div>
+</div>
+ <footer class="footerid clearfix">
+    <p>Copyright © 2017 - Tata Centre for Technology and Design, IIT Bombay</p>
+
+    </footer>
+
+        <script type="text/javascript" src="js/scripts.js"></script>
+ 
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".collapse").on("hide.bs.collapse", function(event){
+                var target = "#"+event.target.id;
+                $(target).siblings(".panel-heading").removeClass("open-item");
+                console.log(event.target.id)
+              });
+
+            $(".collapse").on("show.bs.collapse", function(event){
+                var target = "#"+event.target.id;
+                $(target).siblings(".panel-heading").addClass("open-item");
+                console.log(event.target.id)
+              });
+        })
+    </script>
+</body>
+
+</html>
